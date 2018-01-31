@@ -1,0 +1,831 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+	font-weight: normal;
+
+}
+
+html{
+background-color: #000000;
+
+width: 100%;
+height: 100%;
+
+}
+body{
+	width: 100%;
+	height:auto; 
+	margin: 0 auto;
+color: white;
+
+	
+
+}
+
+header {
+width: 100%;
+margin: 0 auto;
+
+}
+
+a{
+	text-decoration: none;
+	font-size: 0.8em;
+	color: white;
+	padding: 5px;
+
+	border-bottom: none; 
+	transition: border-bottom 0.3s;
+	transition-timing-function:ease-out;
+	
+	
+
+
+}
+main{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;	
+
+}
+
+footer{
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: auto;
+	margin:0 auto;
+	background-color: #1a6aee;
+	opacity: 0.9;
+	z-index: -1;
+
+}
+
+
+
+
+@keyframes movediv1{
+	from{
+		background-color: white;
+	}
+	to{
+		background-color: #1a6aee;
+	}
+}
+
+@keyframes movediv2{
+	0%{
+		background-color: gray;
+	}
+	50%{
+		background-color: #1a6aee;
+	}
+	100%{
+		background-color: white;
+	}
+}
+@keyframes movediv3{
+	from{
+		background-color:#1a6aee;
+	}
+	to{
+		background-color: gray;
+	}
+}
+
+u{
+	cursor: no-drop;
+}
+
+
+#theader{
+
+	display: inline-block;
+	padding: 2.5% 0;
+	width: 40%;
+	font-size: 1em;
+	cursor: pointer;
+	
+
+}
+#icons{
+	float: right;
+	padding: 3% 0;
+	
+}
+
+#icons a:hover{
+	border-bottom:3px solid white; 
+	border-radius: 10px;
+
+}
+
+#icons a:active{
+	border-bottom: 3px solid #1a6aee;
+	border-radius: 10px;
+}
+#onMe{
+	border-bottom: 3px solid #1a6aee;
+	border-radius: 10px;
+}
+
+#notOnMe{
+	border: none;
+}
+
+
+#rule{
+	width: 100%;
+	height: 5px;
+	background-color: white;
+
+	border-top-right-radius:  5px;
+	border-top-left-radius: 5px;
+}
+
+.mainmargin{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#logo{
+	
+	float: left;
+	
+
+}
+#tolizulogo{
+	max-width: 100%;
+	height: auto;
+}
+
+
+
+#box2 h1{
+	font-size: 1em;
+	display: inline-block;
+}
+
+
+#mainText2{
+	padding-top: 10%;
+	
+	text-align:left;
+	font-size: .9em;
+	
+}
+
+
+#movingdiv1{
+	animation-name: movediv1;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+
+	display: inline-block;
+	height: 3px;
+	width: 5px;
+	
+	background-color:  white;
+}
+#movingdiv2{
+	animation-name:  movediv2;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	display: inline-block;
+	height: 3px;
+	width: 5px;
+
+	background-color:  white;
+}
+#movingdiv3{
+	animation-name:  movediv3;
+	animation-iteration-count:  infinite;
+	animation-duration: 1s;
+	display: inline-block;
+	height: 3px;
+	width: 5px;
+
+	background-color:  white;
+
+}
+
+#footercontent{
+	width: 60%;
+	margin: 5% auto; 
+}
+
+#fimg{
+	width: 30px;
+	height: auto;
+}
+
+#footerimg+#footerimg{
+	padding-left: 10%; 
+}
+
+#extraText{
+	float: left;
+	
+}
+
+/****************** Full Bio begins here *********/
+
+@keyframes showAboutTola{
+	from{
+		
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+#toladiv{
+
+
+	width: 60%;
+	border-top: 3px solid white;
+	border-radius: none;
+	margin: 0 auto;
+	animation-name: showAboutTola;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+
+}
+
+
+#tolaimg{
+	width: 60px;
+	height: auto;
+}
+
+#colorDiv{
+		
+	background-color: rgba(26,106,238,0.9);
+
+}
+#colorDiv h3{
+	font-size: 0.425em;
+}
+
+#tolaText{
+	width: 100%;
+	margin: 0 auto;
+}
+
+
+
+#centerMe{
+	text-align: center;
+	font-size: 0.5em;
+}
+
+
+#aboutTola{
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.5em;
+}
+
+/*************** for the resume page *************/
+@keyframes showskills{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+#skillsimg{
+	max-width: 10%;
+	height: auto;
+	float: left;
+	padding-right: 2%;
+}
+
+#iconhead h1{
+	font-size: 0.8em
+}
+
+.makewhite{
+	background-color: white;
+	color: black;
+}
+
+.mainlist{
+	opacity: 1;
+	animation-name: showskills;
+	animation-duration: 3s;
+}
+.mainlist ul li{
+	list-style-type: square;
+	font-size: .6em;
+
+}
+#iconhead{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+
+
+
+/*** responsiveness section*****/
+
+
+@media screen and (min-width : 767px) {
+
+#box1{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#box2{
+	width: 100%;
+	
+}
+/*****full bio page****/	
+
+#extraText{
+	float: right;
+	
+}
+
+a{
+	
+	font-size: 1em;
+
+}
+
+#theader{
+
+	font-size: 1.8em;
+
+
+}
+
+#box2 h1{
+	font-size: 2em;
+}
+#mainText2{
+	padding-top: 15%;
+	font-size: 1.1em;
+	
+}
+#movingdiv{
+	padding-top: 5.5%;
+	padding-left: 1.5%;
+	float: left;
+}
+
+
+	/****************** Full Bio begins here *********/
+#tolaimg{
+	width: 100%;
+	height: auto;
+}
+#colorDiv h3{
+	font-size: 0.8em;
+}
+
+#aboutTola{
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 1em;
+}
+#centerMe{
+	text-align: center;
+	font-size: 1em;
+}
+
+/*************** for the resume page *************/
+#skillsimg{
+	max-width: 10%;
+	height: auto;
+	float: left;
+	padding-right: 2%;
+}
+
+#iconhead h1{
+	padding-top: 2%;
+	font-size: 1em
+}
+
+.makewhite{
+	background-color: white;
+	color: black;
+}
+
+
+.mainlist ul li{
+	list-style-type: square;
+	font-size: 0.9em;
+
+}
+
+
+}
+
+
+@media screen and (min-width : 800px) {
+	/****************** Full Bio begins here *********/
+#tolaimg{
+	width: 100%;
+	height: auto;
+}
+#colorDiv h3{
+	font-size: 0.8em;
+}
+
+#aboutTola{
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 1.1em;
+}
+#centerMe{
+	text-align: center;
+	font-size: 1em;
+}
+
+/*************** for the resume page *************/
+#skillsimg{
+	max-width: 10%;
+	height: auto;
+	float: left;
+	padding-right: 2%;
+}
+
+#iconhead h1{
+	padding-top: 2%;
+	font-size: 1em
+}
+
+.makewhite{
+	background-color: white;
+	color: black;
+}
+
+
+.mainlist ul li{
+	list-style-type: square;
+	font-size: 0.9em;
+
+}
+
+
+}
+@media screen and (min-height: 800px){
+		/****************** Full Bio begins here *********/
+#tolaimg{
+	width: 60%;
+	height: auto;
+}
+#colorDiv h3{
+	font-size: 0.75em;
+}
+
+#aboutTola{
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.9em;
+}
+#centerMe{
+	text-align: center;
+	font-size: 1em;
+}
+}
+
+@media screen and (width : 320px) {
+	/****************** Full Bio begins here *********/
+#tolaimg{
+	display: none;
+	width: 60%;
+	height: auto;
+}
+#colorDiv h3{
+	font-size: 0.5em;
+	display: none;
+}
+
+#aboutTola{
+	
+	text-align: justify;
+	
+	font-size: 0.6em;
+}
+#centerMe{
+	text-align: center;
+	font-size: 0.8em;
+}
+
+
+
+}
+@media screen and (min-width:979px){
+.mainmargin{
+	width: 60%;
+	margin: 0% auto;
+}
+
+#box1{
+	width: 60%;
+	margin: 0 auto;
+}
+
+#box2{
+	width: 60%;
+	margin: 0 auto;
+}
+#box2 h1{
+	text-align: center;
+}
+
+
+#mainText2{
+	padding-top: 15%;
+	clear: left;
+	text-align:center;
+	font-size: 1.1em;
+	
+}
+
+	/****************** Full Bio begins here *********/
+#tolaimg{
+	width: 60%;
+	height: auto;
+}
+#colorDiv h3{
+	font-size: 0.75em;
+}
+
+#aboutTola{
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 0.9em;
+}
+#centerMe{
+	text-align: center;
+	font-size: 1em;
+}
+/*************** for the resume page *************/
+
+
+#iconhead h1{
+	padding-top: 2%;
+	font-size: 1.1em
+}
+
+.makewhite{
+	background-color: white;
+	color: black;
+}
+
+
+.mainlist ul li{
+	list-style-type: square;
+	font-size: 1em;
+
+}
+}
+
+@media screen and (min-width: 1198px){
+
+header {
+width: 60%;
+margin: 0 auto;
+
+}
+
+a{
+	text-decoration: none;
+	font-size: 1.2vw;
+	color: white;
+	padding: 10px;
+	border-bottom: none; 
+	transition: border-bottom 0.3s;
+	transition-timing-function:ease-out;
+	
+	
+
+
+}
+main{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;	
+
+}
+
+footer{
+	
+	bottom: 0;
+	left: 0; 
+	position: fixed;
+	width: 100%;
+	height: auto;
+	margin:0 auto;
+	background-color: #1a6aee;
+	opacity: 0.9;
+	z-index: -1;
+
+}
+
+
+
+
+
+
+#theader{
+
+	display: inline-block;
+	padding: 2.5% 0;
+	width: 40%;
+	font-size: 2.3vw;
+	cursor: pointer;
+	
+
+}
+
+
+#rule{
+	width: 100%;
+	height: 10px;
+	background-color: white;
+
+	border-top-right-radius:  5px;
+	border-top-left-radius: 5px;
+}
+
+.mainmargin{
+	width: 60%;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+#box1{
+	width: 30%;
+	margin: 0;
+	position: absolute;
+	float: left;
+}
+#box2{
+	width: 60%;
+	padding-top: 12%;
+	padding-left:30%;
+	position: absolute;
+	height: inherit;
+}
+
+#box2 h1{
+	display: inline;
+
+}
+
+#box2 div{
+	width: 5px;
+	height: 4px;
+	background-color: white;
+	display: inline-block;
+	padding:2px; 
+}
+
+#logo{
+display: inline-block;
+
+}
+#tolizulogo{
+	width: 100%;
+	height: auto;
+}
+
+#mainText2{
+	padding-top: 40%;
+	text-align: center;
+	font-size: 1.3vw;
+}
+
+
+#movingdiv1{
+	animation-name: movediv1;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+
+}
+#movingdiv2{
+	animation-name:  movediv2;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+
+}
+#movingdiv3{
+	animation-name:  movediv3;
+	animation-iteration-count:  infinite;
+	animation-duration: 1s;
+
+
+}
+
+#footercontent{
+	width: 60%;
+	margin: 5% auto; 
+}
+
+#footerimg+#footerimg{
+	padding-left: 10%; 
+}
+
+#extraText{
+	float: right;
+	
+}
+
+/****************** Full Bio begins here *********/
+
+
+#toladiv{
+
+
+	width: 30%;
+	border-top: 3px solid white;
+	border-radius: none;
+	float: left;
+	animation-name: showAboutTola;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-iteration-count: 1;
+
+}
+
+
+#tolaimg{
+	width: 100%;
+	height: auto;
+}
+
+#colorDiv{
+		
+	background-color: rgba(26,106,238,0.9);
+
+}
+#colorDiv h3{
+	font-size: 1.1vw;
+}
+
+#tolaText{
+	width: 50%;
+	float: right;
+}
+
+#tolaText p{
+	font-size: 1.2vw;
+}
+
+#centerMe{
+	text-align: center;
+	font-size: 1.8vw;
+}
+
+
+#aboutTola{
+	text-align: justify;
+	padding-top: 10px;
+	font-size: 1.2vw;
+}
+
+/*************** for the resume page *************/
+
+
+#skillsimg{
+	max-width: 6%;
+	height: auto;
+	float: left;
+	padding-right: 2%;
+}
+
+.makewhite{
+	background-color: white;
+	color: black;
+}
+
+.mainlist{
+	opacity: 1;
+	animation-name: showskills;
+	animation-duration: 3s;
+}
+.mainlist ul li{
+	list-style-type: square;
+	font-size: 0.8vw;
+
+
+}
+#iconhead{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+}
